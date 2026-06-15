@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Emlak</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+		}
+		#kapsayici {
+			width: 1200px;
+			min-height: 1050px;
+			background-color: whitesmoke;
+			border: 3px solid black;
+			margin: 20px auto;
+			overflow: hidden;
+		}
+		#ust {
+			background-color: darkblue;
+			width: 1200px;
+			height: 140px;
+			float: left;
+			text-align: center;
+			padding-top: 25px;
+		}
+		#ust h1 {
+			color: white;
+			margin-bottom: 15px;
+			font-size: 32px;
+			letter-spacing: 1px;
+		}
+		#ust a {
+			color: white;
+			text-decoration: none;
+			margin: 0 15px;
+			font-size: 16px;
+			font-weight: bold;
+			transition: color 0.3s ease;
+		}
+		#ust a:hover {
+			color: azure;
+		}
+		#menu {
+			width: 1040px;
+			height: auto;
+			background: white;
+			margin-top: 30px;
+			margin-left: 80px;
+			border-radius: 12px;
+			float: left;
+			padding: 30px;
+			box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+		}
+		#menu h2 {
+			color: darkblue;
+			font-size: 26px;
+			margin-bottom: 15px;
+			border-bottom: 2px solid darkblue;
+			padding-bottom: 8px;
+			width: fit-content;
+		}
+		#menu p {
+			font-size: 16px;
+			line-height: 1.6;
+			color: #444;
+			margin-bottom: 15px;
+		}
+		#menu .vurgu {
+			color: #0056b3;
+			font-weight: bold;
+		}
+		#mis {
+			width: 100%;
+			height: auto;
+			float: left;
+			background-color: #fff8e7;
+			border-left: 5px solid #ffc107;
+			padding: 15px;
+			margin-top: 10px;
+			border-radius: 4px;
+		}
+		#mis p {
+			margin-bottom: 0;
+			font-style: italic;
+			color: #555;
+		}
+		#baslik {
+			width: 1200px;
+			height: auto;
+			float: left;
+			margin-top: 40px;
+			margin-bottom: 20px;
+		}
+		#baslik h1 {
+			margin-left: 80px;
+			font-size: 24px;
+			color: #333;
+		}
+		.kutu {
+			width: 270px;
+			height: 310px;
+			background-color: white;
+			border-radius: 8px;
+			margin-left: 80px;
+			float: left;
+			box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+			overflow: hidden;
+			transition: transform 0.3s ease;
+		}
+		.kutula {
+			width: 270px;
+			height: 310px;
+			background-color: white;
+			border-radius: 8px;
+			margin-left: 45px;
+			float: left;
+			box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+			overflow: hidden;
+			transition: transform 0.3s ease;
+		}
+		.kutu:hover, .kutula:hover {
+			transform: translateY(-5px);
+		}
+		img {
+			width: 100%;
+			height: 160px;
+			object-fit: cover;
+		}
+		h3 {
+			margin: 12px 0 6px 15px;
+			font-size: 18px;
+			color: #333;
+		}
+		h5 {
+			margin: 0 0 15px 15px;
+			font-size: 16px;
+			color: #e65100;
+			font-weight: bold;
+		}
+		.kutu a, .kutula a {
+			text-decoration: none;
+		}
+		.kutu h6, .kutula h6 {
+			margin-left: 15px;
+			margin-bottom: 15px;
+			color: darkblue;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		.kutu h6:hover, .kutula h6:hover {
+			text-decoration: underline;
+		}
+		#alt {
+			background-color: darkblue;
+			width: 1200px;
+			height: 60px;
+			float: left;
+			margin-top: 50px;
+			padding-top: 16px;
+		}
+		#alt h2 {
+			text-align: center;
+			color: white;
+			font-size: 16px;
+			font-weight: normal;
+		}
+	</style>
+</head>
+<body>
+<div id="kapsayici">
+	<div id="ust">
+		<h1>MAKBAŞ Emlak</h1>
+		<a href="Anasayfa.html">Anasayfa</a>
+		<a href="satilik.html">Satılık</a>
+		<a href="kiralık.html">Kiralık</a>
+	</div>
+	
+	<div id="menu">
+		<h2>Biz Kimiz?</h2>
+		<p><strong>MAKBAŞ Emlak</strong>, 2025 yılından bu yana müşterilerine <span class="vurgu">güvenilir</span> ve <span class="vurgu">profesyonel</span> danışmanlık hizmeti sunmaktadır.</p>
+		<p>Alanında deneyimli ekibimiz ile <strong>satılık</strong> ve <strong>kiralık</strong> gayrimenkul işlemlerinde müşterilerimizin tüm ihtiyaçlarına çözüm üretiyoruz.</p>
+		<div id="mis">
+			<p><strong>Misyonumuz:</strong> Şeffaf, hızlı ve doğru hizmet anlayışı ile müşterilerimizin hayallerindeki eve ulaşmasını sağlamaktır.</p>
+		</div>
+	</div>
+	
+	<div id="baslik">
+		<h1>Son Eklenen İlanlar</h1>
+	</div>
+	
+	<div class="kutu">
+		<img src="Resimler/ev1.jpg" alt="Daire">
+		<h3>3+1 Daire</h3>
+		<h5>2.500.000 TL</h5>
+		<a href="detay.html"><h6>Detayları Gör</h6></a>
+	</div>
+	
+	<div class="kutula">
+		<img src="Resimler/ev2.jpg" alt="Daire">
+		<h3>5+1 Daire</h3>
+		<h5>3.500.000 TL</h5>
+		<a href="detay.html"><h6>Detayları Gör</h6></a>
+	</div>
+	
+	<div class="kutula">
+		<img src="Resimler/ev3.jpg" alt="Daire">
+		<h3>6+1 Daire</h3>
+		<h5>4.500.000 TL</h5>
+		<a href="detay.html"><h6>Detayları Gör</h6></a>
+	</div>
+	
+	<div id="alt">
+		<h2>&copy; MAKBAŞ Emlak 2026 - Tüm Hakları Saklıdır.</h2>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root
+    {
+      --primary-color: #3b82f6;
+      --secondary-color: #1e40af;
+      --accent-color: #06b6d4;
+    }
+
+    .ozel-menu
+    {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+      padding: 1rem 0;
+    }
+
+    .navbar-brand
+    {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: white !important;
+      letter-spacing: 3px;
+    }
+
+    .nav-link
+    {
+      color:rgba(255, 255, 255, 0.9) !important;
+      margin: 0.1rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-link::after{
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: var(--accent-color);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after{
+      width:100%;
+    }
+
+    .nav-link:hover{
+      color:white !important;
+    }
+    
+    .banner
+    {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--accent-color) 100%);
+      color:white;
+      padding: 120px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banner::before
+    {
+      content:'';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 50%;
+      bottom: -50px;
+      left:-50px;
+    }
+
+    .banner::after
+    {
+      content:'';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 50%;
+      top: -50px;
+      right:-50px;
+    }
+
+    .banner-icerik
+    {
+      position: relative;
+      z-index: 1;
+    }
+
+    .banner-icerik h1
+    {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .banner p{
+      font-size: 1.3rem;
+      margin-bottom:2rem;
+      opacity: 0.9;
+      letter-spacing: 0.1rem;
+    }
+
+    .icon{
+      font-size: 8rem; 
+      color: rgba(255,255,255,0.1);
+    }
+   .bolumbaslik{
+      color: var(--primary-color);
+      font-weight: 800;
+    }
+    .aciklama{
+      color: #627496;
+      font-size: 1.2rem;
+    }
+    .ozellik-card{
+      border: 1px solid #e2e8f0;
+      border-radius: 15px;
+      text-align: center;
+      padding: 30px;
+      transition: all 0.3s ease;
+    }
+    .ozellik-card:hover{
+      border-color: var(--primary-color);
+      box-shadow: 10px 20px 20px rgba(125, 88, 129, 0.2);
+    }
+    .ozellik-icon{
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+    .ozellik-card h4
+    {
+      font-weight: 700;
+      margin-bottom: 15px;
+
+    }
+    .ozellik-card p{
+      color: #627496;
+    }
+    .sayisal-veriler{
+      background: linear-gradient(135deg, var(--primary-color)0%, var(--secondary-color)100%);
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+    }
+    .veri-sayi{
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .veri-etiket{
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top ozel-menu">
+  <div class="container-lg">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-rocket"></i>
+    YILDIZ HOLDİNG
+  </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Anasayfa</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Hakkımızda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Portföy</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">İletişim</a></li>              
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+<section class="banner">
+  <div class="container-lg">
+    <div class="row align-items-center">
+      <div class="col-lg-6 banner-icerik">
+        <h1>Geleceğin Teknolojisini Bugün Yaratıyoruz</h1>
+        <p>İnovatif çözümler ve yaratıcı fikirlerle işletmenizi dijital dünyadaki başarıya ulaştırıyoruz.</p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <div class="icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="özelliklerimiz" style="padding: 60px 0;">
+  <div class="container-lg">
+   <div class="text-center" style="margin-bottom: 50px;">
+
+     <h2 class="bolumbaslik">Neden Bizi Seçmelisiniz?</h2>
+
+     <p class="aciklama">Endüstri standartlarını aşan hizmetler</p>
+
+   </div>
+   <div class="row g-5">
+    <div class="col-md-6 col-lg-4">
+      <div class="ozellik-card">
+  <div class="ozellik-icon">
+    <i class="fas fa-rocket"></i>
+  </div>
+  <h4>Yıldırım Hızında</h4>
+  <p class="card-text">İşinizi hızlandıran ve modern teknoloji çözümleri ile verimliliği maksimize edin</p>
+    </div>
+    </div>
+     <div class="col-md-6 col-lg-4">
+      <div class="ozellik-card">
+  <div class="ozellik-icon">
+    <i class="fas fa-rocket"></i>
+  </div>
+  <h4>Yıldırım Hızında</h4>
+  <p class="card-text">İşinizi hızlandıran ve modern teknoloji çözümleri ile verimliliği maksimize edin</p>
+    </div>
+    </div>
+     <div class="col-md-6 col-lg-4">
+      <div class="ozellik-card">
+  <div class="ozellik-icon">
+    <i class="fas fa-rocket"></i>
+  </div>
+  <h4>Yıldırım Hızında</h4>
+  <p class="card-text">İşinizi hızlandıran ve modern teknoloji çözümleri ile verimliliği maksimize edin</p>
+    </div>
+    </div>
+     <div class="col-md-6 col-lg-4">
+      <div class="ozellik-card">
+  <div class="ozellik-icon">
+    <i class="fas fa-rocket"></i>
+  </div>
+  <h4>Yıldırım Hızında</h4>
+  <p class="card-text">İşinizi hızlandıran ve modern teknoloji çözümleri ile verimliliği maksimize edin</p>
+    </div>
+    </div>
+     <div class="col-md-6 col-lg-4">
+      <div class="ozellik-card">
+  <div class="ozellik-icon">
+    <i class="fas fa-rocket"></i>
+  </div>
+  <h4>Yıldırım Hızında</h4>
+  <p class="card-text">İşinizi hızlandıran ve modern teknoloji çözümleri ile verimliliği maksimize edin</p>
+    </div>
+    </div>
+     <div class="col-md-6 col-lg-4">
+      <div class="ozellik-card">
+  <div class="ozellik-icon">
+    <i class="fas fa-rocket"></i>
+  </div>
+  <h4>Yıldırım Hızında</h4>
+  <p class="card-text">İşinizi hızlandıran ve modern teknoloji çözümleri ile verimliliği maksimize edin</p>
+    </div>
+    </div>
+  </div>
+  </div>
+  
+</section>
+<section class="sayisal-veriler" >
+  <div class="container-lg">
+    <div class="row">
+
+      <div class="col-md-3 col-6">
+        <div class="veri-sayi">500+</div>
+        <div class="veri-etiket">Başarılı Proje</div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="veri-sayi">200+</div>
+        <div class="veri-etiket">Mutlu Müşteri</div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="veri-sayi">450+</div>
+        <div class="veri-etiket">Başarılı Satış</div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="veri-sayi">340+</div>
+        <div class="veri-etiket">Yeni Proje</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="musteri-gorusleri">
+  <div class="container-lg">
+     <div class="text-center" style="margin-bottom: 50px; margin-top: 50px;">
+
+     <h2 class="bolumbaslik">Hizmetlerimiz</h2>
+
+     <p class="aciklama">Müsteri Neler Düşünüyor</p>
+  </div>
+  <div class="row g-3">
+    <div class="col-md-4">
+      
+      <div class="avatar">
+        <i class="fas fa-user"></i>
+      </div>
+
+      <div class="yildizlar">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+
+      <div class="musteri-gorus">Harika hizmet aldık. Ekip çok profosyonel ve detaylı çalışmıştır. Projeyi tam zamanında teslim ettiler</div>
+
+      <div class="musteri-adi">Ahmet Yılmaz</div>
+
+      <div class="musteri-unvan">Ceo, Teknova İnc.</div>
+    </div>
+
+  </div>
+
+</section>
+<script src="bootstrap.js"></script>
+</body>
+</html>
